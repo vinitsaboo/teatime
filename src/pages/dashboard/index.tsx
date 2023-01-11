@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+// import * as style from './dashboard/index.sass';
 
 const GamesDashboard = () => {
     const navigate = useNavigate();
