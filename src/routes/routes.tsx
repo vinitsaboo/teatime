@@ -7,6 +7,7 @@ const AppHomePage = lazy(() => import ('./../App'));
 const Game1 = lazy(() => import ('./../pages/bollywood'));
 const GamesDashboard = lazy(() => import('./../pages/dashboard'));
 const Loader = lazy(() => import('./../components/loader'));
+const GamesCategory = lazy(() => import("../pages/gameCategory"));
 
 export const router =  createBrowserRouter([
 		{
@@ -22,7 +23,12 @@ export const router =  createBrowserRouter([
 			element: <Game1 />,
 		},
 		{
+			path: "games/:gameCategory",
+			element: <GamesCategory />
+		},
+		{
 			path: "*",
 			element: <Loader />
 		}
+		
 	])

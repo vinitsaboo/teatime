@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {router} from './routes/routes';
 import { RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import GameContextProvider from './context/gameLevelContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Suspense fallback={<p>Loading...</p>}>
+    <GameContextProvider>
       <RouterProvider router={router} />
+    </GameContextProvider>
     </Suspense>
   </React.StrictMode>
 );

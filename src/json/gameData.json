@@ -1,0 +1,31 @@
+{
+  "teatimeGames": {
+    "0": "Bollywood",
+    "1": "Advertisement",
+    "2": "Guess Visuals",
+    "3": "Guess Audio",
+    "4": "Pehechan Kaun"
+  },
+  "bollywood": [
+    {
+      "id": "8",
+      "title": "Bollywood DialogueBazi",
+      "roundName": "bollywood_dialogue"
+    },
+    {
+      "id": "9",
+      "title": "Fastest Finger First",
+      "roundName": "fastest_finger"
+    },
+    {
+      "id": "10",
+      "title": "Sun Ke Le",
+      "roundName": "dhun sun"
+    },
+    {
+      "id": "11",
+      "title": "Rang Barse",
+      "roundName": "rang_barse"
+    }
+  ]
+}

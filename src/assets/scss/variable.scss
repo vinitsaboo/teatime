@@ -1,0 +1,21 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+$font-family: 'Open Sans', sans-serif;
+$primaryColor: #4a354d;
+$fontColor: #333;
+$whiteColor: #fff;
+
+@mixin font-thin {
+  font-weight: 300;
+  font-family: $font-family;
+}
+
+@mixin font-regular {
+  font-weight: 400;
+  font-family: $font-family;
+}
+
+@mixin font-bold {
+  font-weight: 500;
+  font-family: $font-family;
+}
