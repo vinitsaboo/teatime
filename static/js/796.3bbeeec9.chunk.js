@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgametime=self.webpackChunkgametime||[]).push([[796],{796:function(e,n,t){t.r(n);t(791);var u=t(184);n.default=function(){return(0,u.jsx)("div",{children:"abcd"})}}}]);
+//# sourceMappingURL=796.3bbeeec9.chunk.js.map
