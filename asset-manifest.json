@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/teatime/static/js/main.bb97603b.js",
+    "main.js": "/teatime/static/js/main.6871f26f.js",
     "static/js/465.482de6eb.chunk.js": "/teatime/static/js/465.482de6eb.chunk.js",
     "static/js/89.0dcdcef9.chunk.js": "/teatime/static/js/89.0dcdcef9.chunk.js",
     "static/css/76.524f6400.chunk.css": "/teatime/static/css/76.524f6400.chunk.css",
@@ -9,7 +9,7 @@
     "static/js/707.026b3db6.chunk.js": "/teatime/static/js/707.026b3db6.chunk.js",
     "static/js/787.5fb309b9.chunk.js": "/teatime/static/js/787.5fb309b9.chunk.js",
     "index.html": "/teatime/index.html",
-    "main.bb97603b.js.map": "/teatime/static/js/main.bb97603b.js.map",
+    "main.6871f26f.js.map": "/teatime/static/js/main.6871f26f.js.map",
     "465.482de6eb.chunk.js.map": "/teatime/static/js/465.482de6eb.chunk.js.map",
     "89.0dcdcef9.chunk.js.map": "/teatime/static/js/89.0dcdcef9.chunk.js.map",
     "76.524f6400.chunk.css.map": "/teatime/static/css/76.524f6400.chunk.css.map",
@@ -19,6 +19,6 @@
     "787.5fb309b9.chunk.js.map": "/teatime/static/js/787.5fb309b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.bb97603b.js"
+    "static/js/main.6871f26f.js"
   ]
 }
