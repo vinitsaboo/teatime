@@ -15,11 +15,11 @@ export const router =  createBrowserRouter([
 			element: <AppHomePage />
 		},
 		{
-			path: "gameDashboard",
+			path: "/gameDashboard",
 			element: <GamesDashboard />,
 		},
 		{
-			path: "game1",
+			path: "/game1",
 			element: <Game1 />,
 		},
 		{
@@ -31,4 +31,4 @@ export const router =  createBrowserRouter([
 			element: <Loader />
 		}
 		
-	])
+	], {basename: '/'})
