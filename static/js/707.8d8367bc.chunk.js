@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgametime=self.webpackChunkgametime||[]).push([[707],{707:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var o=t(791),a=t(184),u=function(){return(0,a.jsx)("div",{children:"Accordion Component"})},c=t(755),r=function(){var e=(0,o.useContext)(c.f),n=e.updateGameInfo,t=e.name;return console.log(t),(0,o.useEffect)((function(){n("name","saboo")}),[n]),console.log({updated:t}),(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)("h3",{children:"GameCategory Page"}),(0,a.jsx)(u,{})]})}}}]);
+//# sourceMappingURL=707.8d8367bc.chunk.js.map
