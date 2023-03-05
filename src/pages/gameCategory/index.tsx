@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import {useContext, useEffect} from 'react';
 import Accordion from '../../components/accordion';
 import { SelectedGameContext } from '../../context/gameLevelContext';
 
@@ -9,7 +9,7 @@ const GameCategory = () => {
 	
 	useEffect(() => {
 		updateGameInfo('name', 'saboo');
-	},[])
+	},[updateGameInfo])
 
 	console.log({updated: name});
 	return (

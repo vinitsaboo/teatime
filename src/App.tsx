@@ -1,6 +1,4 @@
-import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import GameCategory from './pages/gameCategory';
 
 function App() {
   const navigate = useNavigate();

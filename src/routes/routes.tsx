@@ -6,7 +6,6 @@ import {
 const AppHomePage = lazy(() => import ('./../App'));
 const Game1 = lazy(() => import ('./../pages/bollywood'));
 const GamesDashboard = lazy(() => import('./../pages/dashboard'));
-const Loader = lazy(() => import('./../components/loader'));
 const GamesCategory = lazy(() => import("../pages/gameCategory"));
 
 export const router =  createBrowserRouter([
@@ -15,20 +14,19 @@ export const router =  createBrowserRouter([
 			element: <AppHomePage />
 		},
 		{
-			path: "/gameDashboard",
+			path: "/teatime",
+			element: <AppHomePage />
+		},
+		{
+			path: "/teatime/gameDashboard",
 			element: <GamesDashboard />,
 		},
 		{
-			path: "/game1",
+			path: "/teatime/game1",
 			element: <Game1 />,
 		},
 		{
-			path: "games/:gameCategory",
+			path: "/teatime/games/:gameCategory",
 			element: <GamesCategory />
-		},
-		{
-			path: "*",
-			element: <Loader />
 		}
-		
-	], {basename: '/'})
+	])

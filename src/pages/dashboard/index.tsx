@@ -1,4 +1,4 @@
-import {useState, useEffect, createContext} from 'react';
+import {useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import GamesData from '../../json';
 import styles from './index.module.scss';
