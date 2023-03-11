@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/teatime/static/js/main.6954527e.js",
+    "main.js": "/teatime/static/js/main.666f47f2.js",
     "static/js/796.3bbeeec9.chunk.js": "/teatime/static/js/796.3bbeeec9.chunk.js",
     "static/css/199.688588ca.chunk.css": "/teatime/static/css/199.688588ca.chunk.css",
     "static/js/199.ed6f59d1.chunk.js": "/teatime/static/js/199.ed6f59d1.chunk.js",
     "static/js/89.1a99ff02.chunk.js": "/teatime/static/js/89.1a99ff02.chunk.js",
-    "static/css/43.211e93ec.chunk.css": "/teatime/static/css/43.211e93ec.chunk.css",
-    "static/js/43.e2595253.chunk.js": "/teatime/static/js/43.e2595253.chunk.js",
-    "static/js/707.2305c19c.chunk.js": "/teatime/static/js/707.2305c19c.chunk.js",
+    "static/css/437.8d16a0d7.chunk.css": "/teatime/static/css/437.8d16a0d7.chunk.css",
+    "static/js/437.88c4ee0f.chunk.js": "/teatime/static/js/437.88c4ee0f.chunk.js",
+    "static/js/707.fac25c69.chunk.js": "/teatime/static/js/707.fac25c69.chunk.js",
     "static/js/787.5fb309b9.chunk.js": "/teatime/static/js/787.5fb309b9.chunk.js",
     "index.html": "/teatime/index.html",
-    "main.6954527e.js.map": "/teatime/static/js/main.6954527e.js.map",
+    "main.666f47f2.js.map": "/teatime/static/js/main.666f47f2.js.map",
     "796.3bbeeec9.chunk.js.map": "/teatime/static/js/796.3bbeeec9.chunk.js.map",
     "199.688588ca.chunk.css.map": "/teatime/static/css/199.688588ca.chunk.css.map",
     "199.ed6f59d1.chunk.js.map": "/teatime/static/js/199.ed6f59d1.chunk.js.map",
     "89.1a99ff02.chunk.js.map": "/teatime/static/js/89.1a99ff02.chunk.js.map",
-    "43.211e93ec.chunk.css.map": "/teatime/static/css/43.211e93ec.chunk.css.map",
-    "43.e2595253.chunk.js.map": "/teatime/static/js/43.e2595253.chunk.js.map",
-    "707.2305c19c.chunk.js.map": "/teatime/static/js/707.2305c19c.chunk.js.map",
+    "437.8d16a0d7.chunk.css.map": "/teatime/static/css/437.8d16a0d7.chunk.css.map",
+    "437.88c4ee0f.chunk.js.map": "/teatime/static/js/437.88c4ee0f.chunk.js.map",
+    "707.fac25c69.chunk.js.map": "/teatime/static/js/707.fac25c69.chunk.js.map",
     "787.5fb309b9.chunk.js.map": "/teatime/static/js/787.5fb309b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6954527e.js"
+    "static/js/main.666f47f2.js"
   ]
 }
