@@ -1,50 +1,28 @@
-@import url('./../../assets/scss/common.scss');
+@use 'src/assets/scss/index.scss';
 
 .btn-primary {
-    background: transparent;
-    border: solid 2px white;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
+    background: index.$primaryButtonColor;
+    border: none;
+    @include index.fontProps(16px, 20px);
     cursor: pointer;
     text-transform: capitalize;
-    position: relative;
-    z-index: 0;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 100%;
-        transition: all linear 0.3s;
-        top: 0;
-        left: 0;
-    }
+    transition: all linear 0.3s;
     &:hover {
-        &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: red;
-            transition: all linear 0.3s;
-            color: black;
-            z-index: -1;
-            overflow: hidden;
-        }
+        background: index.$primaryButtonHover;
+        transition: all linear 0.3s;        
     }
-}
-
-.btn-md {
-    font-size: 16px;
-    line-height: 30px;
-    padding: 5px 30px;
+    &.btn-md {
+        @include index.fontProps(16px, 30px);
+        padding: 5px 30px;
+    }
+    &.btn-lg {
+        @include index.fontProps(22px, 40px);
+        padding: 8px 40px;
+        min-width: 270px;
+        letter-spacing: 3px;
+    }
 }
 
 .btn-rounded {
     border-radius: 8px;
-    &:hover {
-        &::before {
-            border-radius: 8px;
-        }
-    }
 }
