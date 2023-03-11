@@ -1,8 +1,17 @@
 @import "./../../assets/scss/common.scss";
 
-.gameListItem{
-		margin: 20px;
+.gameCardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+	background: black;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	height: auto;
+	flex-direction: column;
+	.gameSection {
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-wrap: wrap;
+		padding: 20px 0;
 	}
+}

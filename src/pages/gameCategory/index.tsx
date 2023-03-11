@@ -4,7 +4,6 @@ import { SelectedGameContext } from '../../context/gameLevelContext';
 import GamesData from '../../json';
 import { GameNames, GameRoundItems } from '../../types/games';
 
-
 const GameCategory = () => {
 	const {selectedGameDetails} = useContext(SelectedGameContext);
 	const [gameRounds, updateGameRounds] = useState<GameRoundItems[] | null>(null);
@@ -31,7 +30,4 @@ const GameCategory = () => {
 }
 
 export default GameCategory;
-function useCallback(arg0: () => void, arg1: never[]) {
-	throw new Error('Function not implemented.');
-}
 

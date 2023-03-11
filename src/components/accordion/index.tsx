@@ -11,10 +11,9 @@ const Accordion:React.FC<AccordionItems> = ({data}) => {
     const [accordionData, handleAccordionData] = useState(propsData);
     
     const handleAccordionClick = (id: string):void => {
-        console.log(id);
         const saboo =  accordionData.map(data => ({
             ...data,
-            isCollapse: id === data.id
+            isCollapse: id === data.id && !data.isCollapse
         }))
         console.log({saboo})
         handleAccordionData(saboo)
