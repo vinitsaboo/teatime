@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/teatime/static/js/main.666f47f2.js",
+    "main.js": "/teatime/static/js/main.e96b1658.js",
     "static/js/796.3bbeeec9.chunk.js": "/teatime/static/js/796.3bbeeec9.chunk.js",
-    "static/css/199.688588ca.chunk.css": "/teatime/static/css/199.688588ca.chunk.css",
-    "static/js/199.ed6f59d1.chunk.js": "/teatime/static/js/199.ed6f59d1.chunk.js",
+    "static/css/489.991fcd94.chunk.css": "/teatime/static/css/489.991fcd94.chunk.css",
+    "static/js/489.5ad1eb36.chunk.js": "/teatime/static/js/489.5ad1eb36.chunk.js",
     "static/js/89.1a99ff02.chunk.js": "/teatime/static/js/89.1a99ff02.chunk.js",
-    "static/css/437.8d16a0d7.chunk.css": "/teatime/static/css/437.8d16a0d7.chunk.css",
-    "static/js/437.88c4ee0f.chunk.js": "/teatime/static/js/437.88c4ee0f.chunk.js",
-    "static/js/707.fac25c69.chunk.js": "/teatime/static/js/707.fac25c69.chunk.js",
+    "static/css/437.a6d73072.chunk.css": "/teatime/static/css/437.a6d73072.chunk.css",
+    "static/js/437.53260262.chunk.js": "/teatime/static/js/437.53260262.chunk.js",
+    "static/js/707.28203870.chunk.js": "/teatime/static/js/707.28203870.chunk.js",
     "static/js/787.5fb309b9.chunk.js": "/teatime/static/js/787.5fb309b9.chunk.js",
     "index.html": "/teatime/index.html",
-    "main.666f47f2.js.map": "/teatime/static/js/main.666f47f2.js.map",
+    "main.e96b1658.js.map": "/teatime/static/js/main.e96b1658.js.map",
     "796.3bbeeec9.chunk.js.map": "/teatime/static/js/796.3bbeeec9.chunk.js.map",
-    "199.688588ca.chunk.css.map": "/teatime/static/css/199.688588ca.chunk.css.map",
-    "199.ed6f59d1.chunk.js.map": "/teatime/static/js/199.ed6f59d1.chunk.js.map",
+    "489.991fcd94.chunk.css.map": "/teatime/static/css/489.991fcd94.chunk.css.map",
+    "489.5ad1eb36.chunk.js.map": "/teatime/static/js/489.5ad1eb36.chunk.js.map",
     "89.1a99ff02.chunk.js.map": "/teatime/static/js/89.1a99ff02.chunk.js.map",
-    "437.8d16a0d7.chunk.css.map": "/teatime/static/css/437.8d16a0d7.chunk.css.map",
-    "437.88c4ee0f.chunk.js.map": "/teatime/static/js/437.88c4ee0f.chunk.js.map",
-    "707.fac25c69.chunk.js.map": "/teatime/static/js/707.fac25c69.chunk.js.map",
+    "437.a6d73072.chunk.css.map": "/teatime/static/css/437.a6d73072.chunk.css.map",
+    "437.53260262.chunk.js.map": "/teatime/static/js/437.53260262.chunk.js.map",
+    "707.28203870.chunk.js.map": "/teatime/static/js/707.28203870.chunk.js.map",
     "787.5fb309b9.chunk.js.map": "/teatime/static/js/787.5fb309b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.666f47f2.js"
+    "static/js/main.e96b1658.js"
   ]
 }
