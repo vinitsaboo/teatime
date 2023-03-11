@@ -1,0 +1,50 @@
+@import url('./../../assets/scss/common.scss');
+
+.btn-primary {
+    background: transparent;
+    border: solid 2px white;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        transition: all linear 0.3s;
+        top: 0;
+        left: 0;
+    }
+    &:hover {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            transition: all linear 0.3s;
+            color: black;
+            z-index: -1;
+            overflow: hidden;
+        }
+    }
+}
+
+.btn-md {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px 30px;
+}
+
+.btn-rounded {
+    border-radius: 8px;
+    &:hover {
+        &::before {
+            border-radius: 8px;
+        }
+    }
+}

@@ -10,22 +10,26 @@
     {
       "id": "8",
       "title": "Bollywood DialogueBazi",
-      "roundName": "bollywood_dialogue"
+      "roundName": "bollywood_dialogue",
+      "description": "bollywood Dialogue Description"
     },
     {
       "id": "9",
       "title": "Fastest Finger First",
-      "roundName": "fastest_finger"
+      "roundName": "fastest_finger",
+      "description": "Fastest Finger Description"
     },
     {
       "id": "10",
       "title": "Sun Ke Le",
-      "roundName": "dhun sun"
+      "roundName": "dhun sun",
+      "description": "Sun Ke Le description"
     },
     {
       "id": "11",
       "title": "Rang Barse",
-      "roundName": "rang_barse"
+      "roundName": "rang_barse",
+      "description": "Rang Barse Description"
     }
   ]
 }

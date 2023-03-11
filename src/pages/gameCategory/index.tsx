@@ -1,23 +1,37 @@
-import {useContext, useEffect} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import Accordion from '../../components/accordion';
 import { SelectedGameContext } from '../../context/gameLevelContext';
+import GamesData from '../../json';
+import { GameNames, GameRoundItems } from '../../types/games';
 
 
 const GameCategory = () => {
-	const {updateGameInfo, name}: any = useContext(SelectedGameContext);
-	console.log(name);
-	
+	const {selectedGameDetails} = useContext(SelectedGameContext);
+	const [gameRounds, updateGameRounds] = useState<GameRoundItems[] | null>(null);
 	useEffect(() => {
-		updateGameInfo('name', 'saboo');
-	},[updateGameInfo])
+		if(!selectedGameDetails) return;
+		const {category} = selectedGameDetails;
+		updateGameRounds(GamesData[category as keyof GameNames])
+	},[])
 
-	console.log({updated: name});
+		const mapAccordionData = () => {
+			if(!gameRounds) return;
+			return (
+				<Accordion data = {gameRounds} />
+			)
+		};
+		
+    console.log(gameRounds);
 	return (
 		<>
 		<h3>GameCategory Page</h3>
-		<Accordion />
+		{mapAccordionData()}
 		</>
 	)
 }
 
 export default GameCategory;
+function useCallback(arg0: () => void, arg1: never[]) {
+	throw new Error('Function not implemented.');
+}
+

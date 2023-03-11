@@ -1,12 +1,14 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
+import { SelectedGameContext } from '../../context/gameLevelContext';
 import GamesData from '../../json';
 import styles from './index.module.scss';
 
 const GamesDashboard = (props:any) => {
 		const [gamesList, fetchGamesList] = useState<Object>({});
-
+		const {updateGameInfo, selectedGameDetails} = useContext(SelectedGameContext);
     const navigate = useNavigate();
+
 		useEffect(() => {
 			fetchGamesList({...GamesData.teatimeGames});
 		}, []);
@@ -21,6 +23,7 @@ const GamesDashboard = (props:any) => {
 
 		const handleGameClick = (key: number) => {
 			const currentGameName = Object.values(gamesList)[key].split(' ').join('_').toLowerCase();
+			updateGameInfo({...selectedGameDetails, category: currentGameName})
 			navigate(`/games/${currentGameName}`);
 		}
 		

@@ -1,10 +1,21 @@
 export interface SelectedGameDetails {
-	name: string;
 	category: string;
 	round: string;
 }
 
-export interface GameProviderInterface extends SelectedGameDetails{
-	updateGameInfo?: (a,b) => void
+export interface GameProviderInterface {
+	selectedGameDetails: Partial<SelectedGameDetails> | null;
+	updateGameInfo: (data) => void | undefined;
 }
 
+export interface GameRoundItems {
+	id: string;
+	title: string;
+	roundName: string;
+	description: string;
+	isCollapse?: boolean;
+}
+
+export interface GameNames {
+	[key as string]: GameRoundItems[]
+}
