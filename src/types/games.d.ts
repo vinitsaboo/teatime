@@ -8,6 +8,11 @@ export interface GameProviderInterface {
 	updateGameInfo: (data) => void | undefined;
 }
 
+export interface TeaTimeGames {
+	title: string;
+	description: string
+}
+
 export interface GameRoundItems {
 	id: string;
 	title: string;
