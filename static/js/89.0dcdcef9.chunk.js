@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgametime=self.webpackChunkgametime||[]).push([[89],{89:function(e,l,n){n.r(l);n(791);var o=n(184);l.default=function(){return console.log("bollywood game page"),(0,o.jsx)(o.Fragment,{children:(0,o.jsx)("h3",{children:"Bollywood Games"})})}}}]);
-//# sourceMappingURL=89.0dcdcef9.chunk.js.map
