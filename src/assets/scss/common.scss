@@ -1,8 +1,30 @@
 @import "./variable.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     @include font-regular;
     font-size: 16px;
     color: $fontColor;
     line-height: 18px;
+}
+
+.whiteHeaders {
+    color: $whiteColor;
+}
+.bannerHeads {
+    font-size: 60px;
+    line-height: 66px;
+}
+
+h1 {
+    margin: 15px;
+    padding: 15px;
+}
+
+.pageHeadings {
+    font-size: 30px;
+    line-height: 34px;
 }

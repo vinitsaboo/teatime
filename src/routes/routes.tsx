@@ -18,15 +18,15 @@ export const router =  createBrowserRouter([
 			element: <AppHomePage />
 		},
 		{
-			path: "/teatime/gameDashboard",
+			path: "/gameDashboard",
 			element: <GamesDashboard />,
 		},
 		{
-			path: "/teatime/game1",
+			path: "game1",
 			element: <Game1 />,
 		},
 		{
-			path: "/teatime/games/:gameCategory",
+			path: "games/:gameCategory",
 			element: <GamesCategory />
 		}
 	])
