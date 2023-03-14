@@ -4,9 +4,9 @@ import {
   } from "react-router-dom";
 
 const AppHomePage = lazy(() => import ('./../App'));
-const Game1 = lazy(() => import ('./../pages/bollywood'));
+const GameRoundPage = lazy(() => import ('../pages/game'));
 const GamesDashboard = lazy(() => import('./../pages/dashboard'));
-const GamesCategory = lazy(() => import("../pages/gameCategory"));
+const GamesCategory = lazy(() => import("../pages/gameRounds"));
 
 export const router =  createBrowserRouter([
 		{
@@ -22,11 +22,11 @@ export const router =  createBrowserRouter([
 			element: <GamesDashboard />,
 		},
 		{
-			path: "game1",
-			element: <Game1 />,
-		},
-		{
 			path: "games/:gameCategory",
 			element: <GamesCategory />
+		},
+		{
+			path: "games/:gameCategory/:roundName",
+			element: <GameRoundPage />
 		}
 	])

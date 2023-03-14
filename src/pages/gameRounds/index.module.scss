@@ -1,0 +1,9 @@
+@use 'src/assets/scss/index.scss';
+
+.categoryPageWrapper {
+	@extend .centerContainer;
+	flex-direction: column;
+    .centerSections {
+        flex-direction: column;
+    }
+}

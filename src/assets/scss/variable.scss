@@ -1,9 +1,15 @@
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 $font-family: 'Open Sans', sans-serif;
-$primaryColor: #4a354d;
-$fontColor: #333;
+$backgroundPrimary: #E4C2C1;
 $whiteColor: #fff;
+$primaryColor: #F53163;
+$secondaryColor: #D1A080;
+$ternaryColor: #F2F2F2;
+$textColor: #3e394c;
+$headingsColor: #94265f;
+$bannerLineColor: #1e1b42;
+$baseFontSize: 16px;
 
 @mixin font-thin {
   font-weight: 300;
@@ -18,4 +24,21 @@ $whiteColor: #fff;
 @mixin font-bold {
   font-weight: 500;
   font-family: $font-family;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin widthHeight($width: 'inherit',  $height: 'inherit') {
+    width: $width;
+    height: $height
+}
+
+@mixin fontProps($fontSize, $lineHeight, $fontColor: $whiteColor) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $fontColor
 }

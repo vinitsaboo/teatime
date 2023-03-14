@@ -1,50 +1,55 @@
-@import url('./../../assets/scss/common.scss');
+@use 'src/assets/scss/index.scss';
 
 .btn-primary {
-    background: transparent;
-    border: solid 2px white;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
+    background: index.$primaryColor;
+    border: none;
+    @include index.fontProps(16px, 20px);
     cursor: pointer;
     text-transform: capitalize;
-    position: relative;
-    z-index: 0;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 100%;
-        transition: all linear 0.3s;
-        top: 0;
-        left: 0;
-    }
+    transition: all linear 0.3s;
+    border: solid 2px index.$primaryColor;
     &:hover {
-        &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: red;
-            transition: all linear 0.3s;
-            color: black;
-            z-index: -1;
-            overflow: hidden;
+        transition: all linear 0.3s;
+        background: index.$whiteColor;
+    }
+    &.btn-md {
+        @include index.fontProps(16px, 30px);
+        padding: 5px 30px;
+    }
+    &.btn-xs {
+        @include index.fontProps(16px, 22px);
+        padding: 3px 10px;
+    }
+    &.btn-lg {
+        @include index.fontProps(22px, 40px, index.$whiteColor);
+        padding: 8px 40px;
+        min-width: 270px;
+        letter-spacing: 3px;
+        &:hover {
+            color: index.$primaryColor;
         }
     }
 }
 
-.btn-md {
-    font-size: 16px;
-    line-height: 30px;
-    padding: 5px 30px;
+.btn-secondary {
+    background: index.$ternaryColor;
+    border: none;
+    @include index.fontProps(16px, 20px);
+    @include index.font-bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    border: none;
+    &:hover {
+        transition: all linear 0.3s;
+        background: index.$whiteColor;
+    }
+    &.btn-md {
+        @include index.fontProps(16px, 30px, index.$primaryColor);
+        padding: 5px 30px;
+    }
 }
 
 .btn-rounded {
     border-radius: 8px;
-    &:hover {
-        &::before {
-            border-radius: 8px;
-        }
-    }
 }

@@ -1,22 +1,25 @@
-@import url('./../../assets/scss/common.scss');
-.cardItem {
+@use 'src/assets/scss/index.scss';
+
+.primaryCard {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     margin: 15px;
-    border: solid 2px #fff;
-    border-radius: 4px;
     cursor: pointer;
-    color:#fff;
     transition: all ease-in-out 0.3s;
-    &:hover {
-        background: #ff0000;
-        color: #fff;
-        transition: all ease-in-out 0.3s;
+    width: 15%;
+    border-radius: 10px;
+    background: index.$secondaryColor;
+    text-align: center;
+    .cardTitle {
+        @include index.fontProps(20px, 24px, index.$bannerLineColor);
+        margin: 15px 0;
     }
-    .lg-cardTitle {
-        font-size: 30px;
-        line-height: 20px;
-        color: #fff;
+    .cardDescription {
+        margin: 15px 0;
+    }
+    &:hover {
+        background-color: index.$primaryColor;
+        transition: all ease-in-out 0.3s;
     }
 }

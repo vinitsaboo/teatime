@@ -1,17 +1,6 @@
-@import "./../../assets/scss/common.scss";
+@use "src/assets/scss/index.scss";
 
 .gameCardWrapper {
-    display: flex;
-    flex-wrap: wrap;
-	background: black;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	height: auto;
+	@extend .centerContainer;
 	flex-direction: column;
-	.gameSection {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 20px 0;
-	}
 }

@@ -11,11 +11,11 @@ function App() {
   return (
         <section className={styles.homeWrapper}>
           <div className={styles.homeFlexBox}>
-            <h1 className={`${styles.bannerHeads} ${styles.whiteHeaders}`}>Welcome to Bollywood Quiz Game</h1>
+            <h1 className={`${styles.primaryBanner}`}>Welcome to Tea Time Quiz Game</h1>
             <Button
               buttonType="btn-primary"
-              text="start game"
-              btnSize="btn-md"
+              text="Browse Games"
+              btnSize="btn-lg"
               btnStyle="btn-rounded"
               onClick={handleButtonClick}
             />

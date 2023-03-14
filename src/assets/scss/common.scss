@@ -1,30 +1,93 @@
-@import "./variable.scss";
+@use "./variable.scss";
+@forward './variable.scss';
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html {
+    font-size: 100%;
+}
 body {
-    @include font-regular;
-    font-size: 16px;
-    color: $fontColor;
-    line-height: 18px;
+    @include variable.font-regular;
+    @include variable.fontProps(1rem, 1.25rem, variable.$textColor);
+    background-color: variable.$backgroundPrimary;
 }
 
-.whiteHeaders {
-    color: $whiteColor;
+@mixin linearTransition($seconds: 0.3s) {
+    transition: all linear $seconds;
 }
-.bannerHeads {
-    font-size: 60px;
-    line-height: 66px;
+
+.primaryBanner {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 35%;
+        height: 0.31rem;
+        background: variable.$bannerLineColor;
+        width: 30%;
+        z-index: 0;
+        bottom: -0.62rem;
+    }
+}
+
+.centerContainer {
+    @include variable.flexCenter;
+	margin: 1.87rem 0;
+}
+
+.centerSections {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.27rem 0;
+    justify-content: center;
+}
+.linkPrimary {
+    text-decoration: underline;
+    color: variable.$primaryColor;
+    font-weight: 500;
 }
 
 h1 {
-    margin: 15px;
-    padding: 15px;
+    margin: 1.87rem 0;
+    padding: 0.62rem 0;
+    @include variable.fontProps(3.25rem, 3.62rem);
+    letter-spacing: 0.12rem;
+    &.whiteBanner {
+        color: variable.$whiteColor;
+    }
+    &.primaryBanner {
+        color: variable.$headingsColor;
+        letter-spacing: 0.12rem;
+    }
 }
 
-.pageHeadings {
-    font-size: 30px;
-    line-height: 34px;
+h3 {
+    @include variable.fontProps(2.25rem, 2.5rem);
+    &.primaryBanner {
+        color: variable.$headingsColor;
+        letter-spacing: 2px;
+    }
+}
+
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.up {
+@include linearTransition();
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+.down {
+@include linearTransition();
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
 }

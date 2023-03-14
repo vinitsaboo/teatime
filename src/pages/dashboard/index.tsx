@@ -18,14 +18,10 @@ const GamesDashboard = (props:any) => {
 
 		const fetchGameList = () => {
 			if(!gamesList?.length) return;
-			return <Cards data={gamesList} selectedCardData={(recordInfo:any) => handleGameClick(recordInfo)} />
-			// return Object.values(gamesList).map((data, key) => 
-			// 	<dt className={styles.gameListItem} key={`game_${key}`} onClick={() => handleGameClick(key)}>{data}</dt>
-			// )
+			return <Cards type="gameCard" data={gamesList} selectedCardData={(recordInfo:any) => handleGameClick(recordInfo)} />
 		}
 
 		const handleGameClick = (recordInfo:TeaTimeGames) => {
-			console.log(recordInfo);
 			const currentGameName = recordInfo.title.split(' ').join('_').toLowerCase();
 			updateGameInfo({...selectedGameDetails, category: currentGameName})
 			navigate(`/games/${currentGameName}`);
@@ -33,8 +29,8 @@ const GamesDashboard = (props:any) => {
 		
     return (
 			<section className={styles.gameCardWrapper}>
-			<h3>Games Dashboard</h3>
-				<section className={styles.gameSection}>	
+				<h3 className={styles.primaryBanner}>Game Cards</h3>
+				<section className={styles.centerSections}>	
 					{fetchGameList()}
 				</section>					 
 				{props.children}
