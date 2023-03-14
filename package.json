@@ -11,6 +11,7 @@
     "@types/node": "^16.18.10",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "ramda": "^0.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.5.0",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/ramda": "^0.28.23",
     "@types/react-router-dom": "^5.3.3",
     "gh-pages": "^5.0.0",
     "sass": "^1.57.1"

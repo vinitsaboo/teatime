@@ -1,18 +1,14 @@
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 $font-family: 'Open Sans', sans-serif;
-$backgroundPrimary: #8FC3DC;
-$primaryColor: #4a354d;
-$fontColor: #333;
+$backgroundPrimary: #E4C2C1;
 $whiteColor: #fff;
-$primaryButtonColor: #d96c5d;
-$primaryButtonHover: #ed7666;
-$primaryColor: #533b7c;
-$secondaryColor: #7c589a;
-$thirdColor: #9f8cca;
+$primaryColor: #F53163;
+$secondaryColor: #D1A080;
+$ternaryColor: #F2F2F2;
 $textColor: #3e394c;
-$blueColor: #7e6df3;
-$darkPrimaryColor: #ab3cfc;
+$headingsColor: #94265f;
+$bannerLineColor: #1e1b42;
 $baseFontSize: 16px;
 
 @mixin font-thin {

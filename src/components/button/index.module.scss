@@ -1,25 +1,52 @@
 @use 'src/assets/scss/index.scss';
 
 .btn-primary {
-    background: index.$primaryButtonColor;
+    background: index.$primaryColor;
     border: none;
     @include index.fontProps(16px, 20px);
     cursor: pointer;
     text-transform: capitalize;
     transition: all linear 0.3s;
+    border: solid 2px index.$primaryColor;
     &:hover {
-        background: index.$primaryButtonHover;
-        transition: all linear 0.3s;        
+        transition: all linear 0.3s;
+        background: index.$whiteColor;
     }
     &.btn-md {
         @include index.fontProps(16px, 30px);
         padding: 5px 30px;
     }
+    &.btn-xs {
+        @include index.fontProps(16px, 22px);
+        padding: 3px 10px;
+    }
     &.btn-lg {
-        @include index.fontProps(22px, 40px);
+        @include index.fontProps(22px, 40px, index.$whiteColor);
         padding: 8px 40px;
         min-width: 270px;
         letter-spacing: 3px;
+        &:hover {
+            color: index.$primaryColor;
+        }
+    }
+}
+
+.btn-secondary {
+    background: index.$ternaryColor;
+    border: none;
+    @include index.fontProps(16px, 20px);
+    @include index.font-bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    border: none;
+    &:hover {
+        transition: all linear 0.3s;
+        background: index.$whiteColor;
+    }
+    &.btn-md {
+        @include index.fontProps(16px, 30px, index.$primaryColor);
+        padding: 5px 30px;
     }
 }
 

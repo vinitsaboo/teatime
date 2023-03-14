@@ -1,0 +1,26 @@
+@use 'src/assets/scss/index.scss';
+
+.accordionHeader {
+    cursor: pointer;
+}
+.primaryAccordion {
+    border-radius: 4px;
+    border: solid 2px black;
+    margin: 0.62rem 0;
+    min-width: 300px;
+    padding: 0.62rem;
+    .title {
+        width: 90%;
+        display: inline-flex;
+        padding-right: 12px;
+    }
+    &.activeDeck {
+        background: white;
+        color: black;
+    }
+    .cardDescription {
+        border-top: solid 1px black;
+        margin: 15px 0;
+        padding: 15px 0;
+    }
+}

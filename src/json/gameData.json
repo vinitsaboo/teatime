@@ -1,10 +1,25 @@
 {
   "teatimeGames": [
-    { "title": "Bollywood", "description": "" },
-    { "title": "Advertisement", "description": "" },
-    { "title": "Guess Visuals", "description": "" },
-    { "title": "Guess Audio", "description": "" },
-    { "title": "Pehechan Kaun", "description": "" }
+    {
+      "title": "Bollywood",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
+    },
+    {
+      "title": "Advertisement",
+      "description": "It is a long established fact that a reader will be distracted by the"
+    },
+    {
+      "title": "Guess Visuals",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
+    },
+    {
+      "title": "Guess Audio",
+      "description": ""
+    },
+    {
+      "title": "Pehechan Kaun",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
+    }
   ],
   "bollywood": [
     {
@@ -30,6 +45,28 @@
       "title": "Rang Barse",
       "roundName": "rang_barse",
       "description": "Rang Barse Description"
+    }
+  ],
+  "bollywood_dialogue": [
+    {
+      "question": "Quadi No. 786 and Samya Siddiqui",
+      "options": [
+        { "name": "Andaz Apna Apna", "value": 0 },
+        { "name": "Gadar Ek Prem Katha", "value": 1 },
+        { "name": "Hero No", "value": 2 },
+        { "name": "Veer Zara", "value": 3 }
+      ],
+      "answerKey": 3
+    },
+    {
+      "question": "Sammer, Rani & Mr.Duggal",
+      "options": [
+        { "name": "Anari", "value": 0 },
+        { "name": "Mujhse Shaddi Karoge", "value": 1 },
+        { "name": "Mujhse Dosti Karoge", "value": 2 },
+        { "name": "Shaadi Ka Laddo", "value": 3 }
+      ],
+      "answerKey": 1
     }
   ]
 }

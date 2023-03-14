@@ -1,0 +1,17 @@
+@use 'src/assets/scss/index.scss';
+
+.pageWrapper {
+    @extend .centerContainer;
+	flex-direction: column;
+    .pageContent {
+        @extend .centerContainer;
+        padding: 40px 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .radioWrapper {
+        @extend .centerContainer;
+        width: 80%;
+        flex-direction: column;
+    }
+}
