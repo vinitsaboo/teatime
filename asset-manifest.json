@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.js": "/teatime/static/js/main.9330d2d4.js",
+    "main.js": "/teatime/static/js/main.b2e312b3.js",
     "static/js/796.3bbeeec9.chunk.js": "/teatime/static/js/796.3bbeeec9.chunk.js",
-    "static/css/489.80df4d5f.chunk.css": "/teatime/static/css/489.80df4d5f.chunk.css",
-    "static/js/489.e4ab626a.chunk.js": "/teatime/static/js/489.e4ab626a.chunk.js",
-    "static/css/503.af33ed46.chunk.css": "/teatime/static/css/503.af33ed46.chunk.css",
-    "static/js/503.67301c01.chunk.js": "/teatime/static/js/503.67301c01.chunk.js",
-    "static/css/437.8773ee9c.chunk.css": "/teatime/static/css/437.8773ee9c.chunk.css",
-    "static/js/437.38023ae2.chunk.js": "/teatime/static/js/437.38023ae2.chunk.js",
-    "static/css/17.80e8fd5f.chunk.css": "/teatime/static/css/17.80e8fd5f.chunk.css",
-    "static/js/17.303d3db1.chunk.js": "/teatime/static/js/17.303d3db1.chunk.js",
+    "static/css/489.4168c924.chunk.css": "/teatime/static/css/489.4168c924.chunk.css",
+    "static/js/489.7c38b150.chunk.js": "/teatime/static/js/489.7c38b150.chunk.js",
+    "static/css/381.897ad965.chunk.css": "/teatime/static/css/381.897ad965.chunk.css",
+    "static/js/381.982fa78e.chunk.js": "/teatime/static/js/381.982fa78e.chunk.js",
+    "static/css/437.a049ef15.chunk.css": "/teatime/static/css/437.a049ef15.chunk.css",
+    "static/js/437.0c351e20.chunk.js": "/teatime/static/js/437.0c351e20.chunk.js",
+    "static/css/17.e36ea5a2.chunk.css": "/teatime/static/css/17.e36ea5a2.chunk.css",
+    "static/js/17.5553e4e2.chunk.js": "/teatime/static/js/17.5553e4e2.chunk.js",
     "static/js/787.5fb309b9.chunk.js": "/teatime/static/js/787.5fb309b9.chunk.js",
+    "static/js/220.59e89df7.chunk.js": "/teatime/static/js/220.59e89df7.chunk.js",
     "index.html": "/teatime/index.html",
-    "main.9330d2d4.js.map": "/teatime/static/js/main.9330d2d4.js.map",
+    "main.b2e312b3.js.map": "/teatime/static/js/main.b2e312b3.js.map",
     "796.3bbeeec9.chunk.js.map": "/teatime/static/js/796.3bbeeec9.chunk.js.map",
-    "489.80df4d5f.chunk.css.map": "/teatime/static/css/489.80df4d5f.chunk.css.map",
-    "489.e4ab626a.chunk.js.map": "/teatime/static/js/489.e4ab626a.chunk.js.map",
-    "503.af33ed46.chunk.css.map": "/teatime/static/css/503.af33ed46.chunk.css.map",
-    "503.67301c01.chunk.js.map": "/teatime/static/js/503.67301c01.chunk.js.map",
-    "437.8773ee9c.chunk.css.map": "/teatime/static/css/437.8773ee9c.chunk.css.map",
-    "437.38023ae2.chunk.js.map": "/teatime/static/js/437.38023ae2.chunk.js.map",
-    "17.80e8fd5f.chunk.css.map": "/teatime/static/css/17.80e8fd5f.chunk.css.map",
-    "17.303d3db1.chunk.js.map": "/teatime/static/js/17.303d3db1.chunk.js.map",
-    "787.5fb309b9.chunk.js.map": "/teatime/static/js/787.5fb309b9.chunk.js.map"
+    "489.4168c924.chunk.css.map": "/teatime/static/css/489.4168c924.chunk.css.map",
+    "489.7c38b150.chunk.js.map": "/teatime/static/js/489.7c38b150.chunk.js.map",
+    "381.897ad965.chunk.css.map": "/teatime/static/css/381.897ad965.chunk.css.map",
+    "381.982fa78e.chunk.js.map": "/teatime/static/js/381.982fa78e.chunk.js.map",
+    "437.a049ef15.chunk.css.map": "/teatime/static/css/437.a049ef15.chunk.css.map",
+    "437.0c351e20.chunk.js.map": "/teatime/static/js/437.0c351e20.chunk.js.map",
+    "17.e36ea5a2.chunk.css.map": "/teatime/static/css/17.e36ea5a2.chunk.css.map",
+    "17.5553e4e2.chunk.js.map": "/teatime/static/js/17.5553e4e2.chunk.js.map",
+    "787.5fb309b9.chunk.js.map": "/teatime/static/js/787.5fb309b9.chunk.js.map",
+    "220.59e89df7.chunk.js.map": "/teatime/static/js/220.59e89df7.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9330d2d4.js"
+    "static/js/main.b2e312b3.js"
   ]
 }
