@@ -36,12 +36,12 @@ const Accordion:React.FC<AccordionItems> = ({data, category = '', fetchRoundName
                     <i className={`${styles.arrow} ${styles[isCollapse ? 'up' : 'down']}`}></i>
                 </div>
                 {isCollapse && 
-                <div>
+                <div className={styles.accordionContent}>
                     <p className={styles.cardDescription}>{description}</p>
                     <Button
                         buttonType="btn-primary"
                         text="Browse Games"
-                        btnSize="btn-md"
+                        btnSize="btn-xs"
                         btnStyle="btn-rounded"
                         onClick={() => handleButtonClick(roundName)}
                         />

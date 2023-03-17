@@ -1,27 +1,32 @@
 @use 'src/assets/scss/index.scss';
 
-.radioLabel {
-    padding: 10px;
+.optionsWrapper {
+    padding: 0 4px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 0 15px;
+    justify-content: center;
+    align-items: center;
     background: white;
-    color: black;
-    border: solid 2px #000;
-    flex-direction: column;
-    margin: 10px;
+}
+.radioLabel {
+    padding: 12px 20px;
+    background: index.$bannerLineColor;
+    color: index.$whiteColor;
+    margin: 15px 10px 0;
     display: flex;
     border-radius: 5px;
-    width: 100%;
+    width: 40%;
     transition: all linear 0.3s;
     cursor: pointer;
-    &:focus-within {
-        color: red;
-    }
     input[type="radio"] {
         display: none;
     }
-    .questionBox {
-        font-size: 20px;
-        line-height: 24px;
-        margin: 0 0 30px 0;
-        padding: 0;
+    &:hover {
+        background:index.$secondaryColor;
+    }
+    &.active {
+        background: index.$primaryColor;
     }
 }

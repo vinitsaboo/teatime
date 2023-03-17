@@ -5,13 +5,36 @@
 	flex-direction: column;
     .pageContent {
         @extend .centerContainer;
-        padding: 40px 0;
+        padding: 20px 0;
         width: 100%;
         flex-direction: column;
+        margin: 0;
+        display: flex;
     }
     .radioWrapper {
         @extend .centerContainer;
-        width: 80%;
+        width: 60%;
         flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+.radioWrapper {
+    .questionBox {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+        padding: 10px 4px;
+        text-align: center;
+        background: index.$primaryColor;
+        width: 100%;
+        color: index.$whiteColor;
+        border-radius: 20px 20px 0 0;
+    }
+    .buttonFooter {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 20px 0
     }
 }

@@ -2,29 +2,22 @@
 
 .progressBarWrapper {
     @include index.flexCenter;
-    margin: 0 auto;
-    width: 60%;
-}
-.progressInner {
-    width: 60%;
-    text-align: left;
+    margin: 15px auto;
+    width: 40%;
+    flex-direction: row;
 }
 
 .progressBar {
     width: 100%;
     border: solid 2px black;
     position: relative;
-    padding: 1px;
+    padding: 0;
     overflow: hidden;
-    height: 5px;
-    border-radius: 10px;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 5px;
+    height: 40px;
+    border-radius: 4px;
+   .progressInner {
+        height: 100%;
         background: black;
-    }
+        transition: all linear 0.3s;
+   }
 }

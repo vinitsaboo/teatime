@@ -13,15 +13,14 @@ const Timer = () => {
         updateTimerValue(timerValue - 1)
     }, (1000));
 
-    // const currentWidth = `${timerValue}%`;
+    const currentWidth = `${(timerValue * 100) / 60}%`;
     return (
         <section className={styles.progressBarWrapper}>
-						<h4>{timerValue}</h4>
-						{/* <div className={styles.progressInner}>
-							<div className={styles.progressBar} style={{width: currentWidth}}>
-							</div>
-						</div> */}
-						
+            <h4>Time Left:</h4>
+            <div className={styles.progressBar}>
+                <div className={styles.progressInner} style={{width:currentWidth}}></div>
+            </div>
+            <h2>{timerValue}s</h2>
         </section>
     )
 }

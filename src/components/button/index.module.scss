@@ -19,6 +19,9 @@
     &.btn-xs {
         @include index.fontProps(16px, 22px);
         padding: 3px 10px;
+        &:hover {
+            color: index.$primaryColor;
+        }
     }
     &.btn-lg {
         @include index.fontProps(22px, 40px, index.$whiteColor);
