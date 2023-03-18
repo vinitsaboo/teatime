@@ -3,20 +3,20 @@
 .primaryCard {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    margin: 15px;
+    padding: 0.93rem;
+    margin: 0.93rem;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
     width: 15%;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     background: index.$secondaryColor;
     text-align: center;
     .cardTitle {
-        @include index.fontProps(20px, 24px, index.$bannerLineColor);
-        margin: 15px 0;
+        @include index.fontProps(1.25rem, 1.5rem, index.$bannerLineColor);
+        margin: 0.93rem 0;
     }
     .cardDescription {
-        margin: 15px 0;
+        margin: 0.93rem 0;
     }
     &:hover {
         background-color: index.$primaryColor;

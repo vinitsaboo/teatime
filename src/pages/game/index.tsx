@@ -1,33 +1,36 @@
 import React, { useContext, useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import GamesData from '../../json';
-import { prop } from 'ramda';
-import { GamePageData } from '../../types/games';
+import { lensIndex, prop, pipe,tap,view, identity, Lens } from 'ramda';
 import { SelectedGameContext } from '../../context/gameLevelContext';
 import RadioGroup from '../../components/radioButton';
 import Timer from '../../components/timer';
 import Button from '../../components/button';
+import { QuestionData } from '../../types/games';
 
 const GamePage = () => {
 	const [questionIndex, handleQuestionIndex] = useState<number>(0);
-	const [currentGameInfo, fetchCurrentGameInfo] = useState(undefined);
 	const {selectedGameDetails} = useContext(SelectedGameContext);
-	const [showNotification, handleNotification] = useState<boolean>(false);
-    
+    const [questionDetail, updateQuestionDetail] = useState<QuestionData | undefined>(undefined);
+
+	// To fetch data on load
 	useEffect(() => {
-		const data = prop(`${selectedGameDetails?.round}`, GamesData);
-		fetchCurrentGameInfo(data);
-	},[])
-	
+		const fetchQuestionDetails =
+			pipe(prop(`${selectedGameDetails?.round}`),
+			view(lensIndex(questionIndex)),
+			identity
+			)(GamesData);
+		updateQuestionDetail(fetchQuestionDetails as QuestionData);
+	},[questionIndex])
 	
 	const fetchCurrentQuestion = () => {
-		if(!currentGameInfo) return;
-		const {question = '', answerKey = ''} = currentGameInfo?.[questionIndex];
+		if(!questionDetail) return;
+		const {question = '', answerKey = ''} = questionDetail;
 		return (
 				<>
 				<h4 className={styles.questionBox}>Q{questionIndex + 1}.{question}</h4>
 				<RadioGroup
-					groupData={currentGameInfo[questionIndex]}
+					groupData={questionDetail}
 					qNumber={questionIndex+1}
 					handleRadioClick = {(selected) => { return +selected === +answerKey ? window.alert('conrrect answer'): window.alert('wrong answer')}}
 				/>

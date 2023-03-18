@@ -2,19 +2,19 @@
 
 .progressBarWrapper {
     @include index.flexCenter;
-    margin: 15px auto;
+    margin: 0.93rem auto;
     width: 40%;
     flex-direction: row;
 }
 
 .progressBar {
     width: 100%;
-    border: solid 2px black;
+    border: solid 0.12rem black;
     position: relative;
     padding: 0;
     overflow: hidden;
-    height: 40px;
-    border-radius: 4px;
+    height: 2.5rem;
+    border-radius: 0.25rem;
    .progressInner {
         height: 100%;
         background: black;

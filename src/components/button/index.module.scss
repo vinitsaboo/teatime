@@ -3,31 +3,31 @@
 .btn-primary {
     background: index.$primaryColor;
     border: none;
-    @include index.fontProps(16px, 20px);
+    @include index.fontProps(1rem, 1.25rem);
     cursor: pointer;
     text-transform: capitalize;
     transition: all linear 0.3s;
-    border: solid 2px index.$primaryColor;
+    border: solid 0.125rem index.$primaryColor;
     &:hover {
         transition: all linear 0.3s;
         background: index.$whiteColor;
     }
     &.btn-md {
-        @include index.fontProps(16px, 30px);
-        padding: 5px 30px;
+        @include index.fontProps(1rem, 1.87rem);
+        padding: 0.31rem 1.87rem;
     }
     &.btn-xs {
-        @include index.fontProps(16px, 22px);
-        padding: 3px 10px;
+        @include index.fontProps(1rem, 1.37rem);
+        padding: 0.187rem 0.625rem;
         &:hover {
             color: index.$primaryColor;
         }
     }
     &.btn-lg {
-        @include index.fontProps(22px, 40px, index.$whiteColor);
-        padding: 8px 40px;
-        min-width: 270px;
-        letter-spacing: 3px;
+        @include index.fontProps(1.37rem, 2.5rem, index.$whiteColor);
+        padding: 0.5rem 2.5rem;
+        min-width: 16.87rem;
+        letter-spacing: 0.18rem;
         &:hover {
             color: index.$primaryColor;
         }
@@ -37,7 +37,7 @@
 .btn-secondary {
     background: index.$ternaryColor;
     border: none;
-    @include index.fontProps(16px, 20px);
+    @include index.fontProps(1rem, 1.25rem);
     @include index.font-bold;
     cursor: pointer;
     text-transform: capitalize;
@@ -48,11 +48,11 @@
         background: index.$whiteColor;
     }
     &.btn-md {
-        @include index.fontProps(16px, 30px, index.$primaryColor);
-        padding: 5px 30px;
+        @include index.fontProps(1rem, 1.87rem, index.$primaryColor);
+        padding: 0.31rem 1.87rem;
     }
 }
 
 .btn-rounded {
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
