@@ -1,36 +1,45 @@
 import React, { useContext, useEffect, useState } from 'react';
-// import Timer from '../../components/timer';
 import styles from './index.module.scss';
 import GamesData from '../../json';
-import { prop } from 'ramda';
-import { GamePageData } from '../../types/games';
+import { lensIndex, prop, pipe,tap,view, identity, Lens } from 'ramda';
 import { SelectedGameContext } from '../../context/gameLevelContext';
 import RadioGroup from '../../components/radioButton';
 import Timer from '../../components/timer';
 import Button from '../../components/button';
-// import RadioGroup from '../../components/radioButton';
+import { QuestionData } from '../../types/games';
 
 const GamePage = () => {
 	const [questionIndex, handleQuestionIndex] = useState<number>(0);
-	const [currentGameInfo, fetchCurrentGameInfo] = useState(undefined);
 	const {selectedGameDetails} = useContext(SelectedGameContext);
-    
-	useEffect(() => {
-		const data = prop(`${selectedGameDetails?.round}`, GamesData);
-		fetchCurrentGameInfo(data);
-	},[])
+    const [questionDetail, updateQuestionDetail] = useState<QuestionData | undefined>(undefined);
 
+	// To fetch data on load
+	useEffect(() => {
+		const fetchQuestionDetails =
+			pipe(prop(`${selectedGameDetails?.round}`),
+			view(lensIndex(questionIndex)),
+			identity
+			)(GamesData);
+		updateQuestionDetail(fetchQuestionDetails as QuestionData);
+	},[questionIndex])
+	
 	const fetchCurrentQuestion = () => {
-		if(!currentGameInfo) return;
+		if(!questionDetail) return;
+		const {question = '', answerKey = ''} = questionDetail;
 		return (
-			<div className={styles.radioWrapper}>
+				<>
+				<h4 className={styles.questionBox}>Q{questionIndex + 1}.{question}</h4>
 				<RadioGroup
-					groupData={currentGameInfo[questionIndex]}
+					groupData={questionDetail}
 					qNumber={questionIndex+1}
-					handleRadioClick = {(selected, answerKey) => {console.log(selected, answerKey); return +selected === +answerKey ? window.alert('conrrect answer'): window.alert('wrong answer')}}
+					handleRadioClick = {(selected) => { return +selected === +answerKey ? window.alert('conrrect answer'): window.alert('wrong answer')}}
 				/>
-			</div>
+			</>
 		)
+	}
+
+	const updateQuestion = () => {
+		handleQuestionIndex(questionIndex + 1)
 	}
 
 	return (
@@ -38,21 +47,26 @@ const GamePage = () => {
 			<h3 className={styles.primaryBanner}>GameCategory Page</h3>
 			<section className={styles.pageContent}>
 				<Timer />
+			<div className={styles.radioWrapper}>
 				{fetchCurrentQuestion()}
-				<Button
-					buttonType="btn-primary"
-					text="Next"
-					btnSize="btn-xs"
-					btnStyle="btn-rounded"
-					onClick={() => ''}
+				<div className={styles.buttonFooter}>
+					
+					<Button
+						buttonType="btn-primary"
+						text="Hint"
+						btnSize="btn-xs"
+						btnStyle="btn-rounded"
+						onClick={() => ''}
 					/>
 					<Button
-					buttonType="btn-primary"
-					text="Previous"
-					btnSize="btn-xs"
-					btnStyle="btn-rounded"
-					onClick={() => ''}
+						buttonType="btn-primary"
+						text="Next"
+						btnSize="btn-xs"
+						btnStyle="btn-rounded"
+						onClick={() => updateQuestion()}
 					/>
+				</div>
+			</div>
 			</section>
 		</section>
 	)

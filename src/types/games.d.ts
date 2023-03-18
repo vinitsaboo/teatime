@@ -30,18 +30,15 @@ export interface RadioOptions {
 	name: string;
 	value: number;
 }
-export interface RadioGroupInterface {
+export interface QuestionData {
+	id: string;
 	question: string;
 	options: RadioOptions[];
 	answerKey: string | number;
 }
 
 export interface RadioGroupData {
-    groupData: RadioGroupInterface;
+    groupData: QuestionData;
 	handleRadioClick: (a,b) => void
 	qNumber: number;
-}
-
-export interface GamePageData {
-	[key as string]: RadioGroupInterface[]
 }

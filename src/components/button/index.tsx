@@ -7,15 +7,16 @@ interface ButtonInterface {
     btnSize: string;
     btnStyle:string;
     onClick: (data?: any) => void;
+    isDisabled?:boolean
 }
 
-const Button: React.FC<ButtonInterface> = ({buttonType, text, btnSize, btnStyle, onClick}) => {
+const Button: React.FC<ButtonInterface> = ({buttonType, text, btnSize, btnStyle, isDisabled=false, onClick}) => {
     const handleButtonClick = (event:any) => {
         onClick(event)
     }
     return (
     <>
-        <button className={`${styles[buttonType]} ${styles[btnSize]} ${styles[btnStyle]}`} onClick={handleButtonClick}>{text}</button>
+        <button disabled={isDisabled} className={`${styles[buttonType]} ${styles[btnSize]} ${styles[btnStyle]}`} onClick={handleButtonClick}>{text}</button>
     </>
     )
 }
